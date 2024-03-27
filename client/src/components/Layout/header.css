@@ -1,0 +1,160 @@
+@media screen and (min-width: 801px) and (max-width: 2000px) {
+
+
+    .brimg {
+        height: 50px;
+        margin-left: 10px;
+    }
+
+
+
+    .homm {
+        color: black;
+    }
+
+    .hom {
+        color: black;
+    }
+
+    .bg-body-tertiary {
+        background-color: black;
+    }
+
+    .head {
+        align-items: center;
+
+    }
+
+    .bg-body-tertiary {
+        height: 80px;
+    }
+
+
+    .dropmenu {
+        height: 130px;
+        width: 300px;
+        margin-left: -200px;
+    }
+
+    .lrrbtn {
+
+        margin-top: 50px;
+        width: 115px;
+        height: 50px;
+        margin-left: 20px;
+        margin-right: 5px;
+        border-radius: 15px;
+        color: white;
+        border-color: rgb(10, 72, 51);
+        background-color: rgb(10, 72, 51);
+    }
+.gif{
+    width: 25px;
+    height: 22px;
+}
+
+    .drop2 {
+        height: 145px;
+        width: 200px;
+        margin-left: -80px;
+    }
+
+    .hddiv {
+        display: flex;
+        padding-left: 500px;
+        align-content: space-between;
+    }
+
+    .mobhead {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}
+
+/* --------------------------------------Small Screen----------------------------------------------- */
+@media screen and (max-width: 800px) {
+
+    .pcheader {
+        display: none;
+    }
+
+    .mobhead {
+        display: block;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        height: 70px;
+        padding: 20px;
+    }
+
+    .mobbrimg {
+        margin-left: 20px;
+        width: 30%;
+    }
+
+    .brimg {
+        height: 50px;
+        margin-left: 5px;
+    }
+
+    .nav-menu {
+        padding: 15px;
+        width: 60%;
+        height: 100vh;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: -80%;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-cat-menu {
+        padding: 15px;
+        width: 100%;
+        height: 40%;
+        background-color: #ffffff;
+        position: fixed;
+        border-radius: 20px;
+        bottom: -40%;
+        left: 0;
+        overflow-y: auto;
+        transition: bottom 0.3s ease;
+        z-index: 1000;
+        overflow-x: hidden;
+    }
+
+    .nav-cat-menu.active {
+        bottom: 0;
+    }
+
+    .mobnav {
+        text-decoration: none;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        display: block;
+    }
+
+    .navigators {
+        margin-top: 35px;
+    }
+
+    .catnavigators {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        position: absolute;
+        padding: 30px;
+        grid-gap: 40px;
+        
+
+    }
+
+}

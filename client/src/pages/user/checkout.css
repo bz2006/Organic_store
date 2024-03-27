@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 2000px) {
+
+    .codiv {
+        margin: 20px;
+        margin-left: 40px;
+    }
+
+    .col1 {
+        border: 1px solid rgb(187, 187, 187);
+        box-shadow: 0 0 0 2px rgb(247, 247, 247);
+        width: 70%;
+        height: 250px;
+        padding: 20p;
+        border-radius: 5px;
+    }
+
+    .col2 {
+        border: 1px solid rgb(187, 187, 187);
+        box-shadow: 0 0 0 2px rgb(247, 247, 247);
+        border-radius: 5px;
+        width: 26.5%;
+        padding: 20px;
+        font-family: Rubik;
+        
+        height: 350px;
+        margin-left: 20px;
+    }
+
+    .col3 {
+        margin-top: -53px;
+        border-radius: 5px;
+        border: 1px solid rgb(187, 187, 187);
+        width: 70%;
+        box-shadow: 0 0 0 2px rgb(247, 247, 247);
+        min-height: 100px;
+        overflow: hidden;
+        
+    }
+    .mobcodiv{
+        display: none;
+    }
+    .buybtn {
+        height: 50px;
+        width: 100%;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-family: Rubik;
+        background-color: rgb(0, 80, 87);
+        border: 1px solid rgb(0, 80, 87);
+    }
+    
+    .btndiv {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .codiv {
+        display: none;
+    }
+    .shipadrs{
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .billadrs{
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .col2 {
+        background-color: rgb(255, 255, 255);
+        min-height: max-content;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        min-width: max-content;
+        
+    }
+    .cartcrd {
+        margin-bottom: 10px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    #card {
+        border-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    .ctdiv {
+        display: none;
+    }
+
+    .foot {
+        display: flex;
+        align-items: center;
+        margin-left: 38%;
+    }
+
+    .card-img {
+        margin: 10px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .selqty {
+        padding-left: 30px;
+        width: 80px;
+        margin-left: 20px;
+        border-radius: 5px;
+        height: 30px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: rgb(231, 231, 231);
+        border: 1px solid rgb(202, 202, 202);
+    }
+
+    .delcartm {
+        margin-left: 20px;
+        background-color: rgb(231, 231, 231);
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        height: 30px;
+        width: 80px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgb(202, 202, 202);
+    }
+
+    .card-body {
+        margin-top: 25px;
+    }
+    .cremty {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-bottom: 80px;
+    }
+.crtbdiv{
+    background-color: white;
+    max-height: max-content;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.buybtn {
+    height: 50px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: Rubik;
+    background-color: rgb(0, 80, 87);
+    border: 1px solid rgb(0, 80, 87);
+}
+
+.btndiv {
+    margin-top: 30px;
+}
+}

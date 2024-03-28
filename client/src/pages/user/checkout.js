@@ -209,7 +209,7 @@ const Checkout = () => {
     return (
         <>
             <div className='codiv'>
-                <h1>Review Your Order</h1>
+                <h2 style={{ margin: "30px", fontFamily: "Rubik", fontWeight: "400" }}>Review Your Order</h2>
                 <Row xs={1} md={2} className="g-4 row row-cols-md-2 row-cols-1">
                     <Col className='col1'>
                         <div style={{ display: "inline-block" }}>

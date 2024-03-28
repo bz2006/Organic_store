@@ -61,7 +61,7 @@ const Header = () => {
       <div className='mobhead'>
 
         <FontAwesomeIcon icon={faBars} size='2xl' onClick={showSidebar} />
-        <img src="https://static.wixstatic.com/media/c1ec53_cdb43083bb05441ca9fb28a5027a7306~mv2.webp" onClick={() => { navigate("/") }} className='mobbrimg' alt=''></img>
+        <img src={hosturl+"logo.png"} onClick={() => { navigate("/") }} className='mobbrimg' alt=''></img>
         <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", marginTop: "-27px" }}>
           {!auth.user ? (<a href='login' style={{ textDecoration: "none", fontSize: "large" }}>Log In</a>) : (<FontAwesomeIcon icon={faUser} size='xl' onClick={() => { navigate("/dashboard/my_account") }} />)}
           <FontAwesomeIcon icon={faCartShopping} onClick={() => { navigate("/cart") }} size='xl' style={{ marginLeft: "25px" }} />
@@ -93,7 +93,7 @@ const Header = () => {
       </div>
       <div className='pcheader'>
         <Navbar expand="lg" className="bg-body-tertiary">
-          <Navbar.Brand href="/" className='brimg'><><Image src="https://static.wixstatic.com/media/c1ec53_cdb43083bb05441ca9fb28a5027a7306~mv2.webp" fluid className='brimg' /></></Navbar.Brand>
+          <Navbar.Brand href="/" className='brimg'><><Image src={hosturl+"logo.png"} fluid className='brimg' /></></Navbar.Brand>
           <Container className='head'>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

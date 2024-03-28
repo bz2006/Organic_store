@@ -12,8 +12,8 @@ function HomePage() {
     return (
         <Layout>
             <>
-                <img src="https://static.wixstatic.com/media/c1ec53_be8960ac122345d59d16a1aaa2853c31~mv2.webp" className="responsive" />
-                <img src={hosturl+"home_logo_2p.png"} className="responsive1" />
+                <img src={hosturl+"banner.png"} className="responsive" />
+                <img src={hosturl+"bannerCopy.png"} className="responsive1" />
             </>
           <Featuredproducts/>
         </Layout>

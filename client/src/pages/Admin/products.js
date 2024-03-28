@@ -37,7 +37,7 @@ const Products = () => {
         `/api/v1/product/delete-product/${Id}`
       );
       if (data.success) {
-        toast.success(`category is deleted`);
+        toast.success(`Product deleted`);
 
         getAllproducts();
       } else {

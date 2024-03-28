@@ -9,7 +9,7 @@ const FILE_TYPE_MAP = {
     'image/png': 'png',
     'image/jpeg': 'jpeg',
     'image/jpg': 'jpg',
-    'video/mp4':'mp4'
+    'video/mp4': 'mp4'
 }
 
 export const storage = multer.diskStorage({
@@ -79,7 +79,7 @@ export const getSingleProduct = async (req, res) => {
             return res.status(404).json({ success: false, message: 'Product not found' });
         }
 
-        return res.status(200).json({product });
+        return res.status(200).json({ product });
     } catch (error) {
         return res.status(500).json({ success: false, message: error.message });
     }
@@ -99,14 +99,14 @@ export const getAllProducts = async (req, res) => {
 
 export const getProducts = async (req, res) => {
     try {
-        const categoryId = req.params.id; 
-        
+        const categoryId = req.params.id;
+
         const productList = await productModel.find({ category: categoryId });
-        
+
         if (!productList) {
             return res.status(404).json({ success: false, message: 'No products found for the specified category' });
         }
-        
+
         return res.status(200).json({ success: true, productList });
     } catch (error) {
         return res.status(500).json({ success: false, message: error.message });
@@ -119,12 +119,15 @@ export const updateProducts = async (req, res) => {
     let imagesPaths = [];
     const files = req.files
     const img = req.body.images
-
     try {
-        for (let pic of img) {
-            imagesPaths.push(pic)
+        if (typeof img ==="string") {
+            imagesPaths.push(img)
         }
-
+        else {
+            for (let pic of img) {
+                imagesPaths.push(pic)
+            }
+        }
         if (files) {
             files.map(file => {
                 if (!imagesPaths.includes(file.filename)) {

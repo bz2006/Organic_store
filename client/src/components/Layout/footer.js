@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import "./footer.css"
 
 const Footer = () => {
-
+  var hosturl = window.location.protocol + "//" + window.location.host + "/uploads/"
   const [categories, setCategories] = useState([]);
   const navigate = useNavigate()
 
@@ -31,10 +31,10 @@ const Footer = () => {
         < Row xs={1} md={4} className="g-4 row-cols-md-2 row-cols-1">
           <Col className='coool'>
              <a href="/">
-              <img src="https://static.wixstatic.com/media/c1ec53_cdb43083bb05441ca9fb28a5027a7306~mv2.webp" className='brimg' alt="" />
+              <img src={hosturl+"logo.png"} className='brimg' alt="" />
             </a>
             <p className="my-3" style={{ maxWidth: '250px', textDecoration: "none", color: "black" }}>
-              We are creating High-Quality Resources and tools to Aid developers during the development of their projects
+             100% Organic products for your home!
             </p> 
           </Col>
           <Col className='one'>

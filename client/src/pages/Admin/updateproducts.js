@@ -35,6 +35,7 @@ const UpdateProduct = () => {
       setMrp(data.product.mrp);
       setCategory(data.product.category);
       setInStock(data.product.InStock);
+      console.log(data.product.InStock)
       setFeatured(data.product.isFeatured)
       if (data.success) {
 
@@ -87,7 +88,7 @@ const UpdateProduct = () => {
       if (data?.success) {
         toast.error(data?.message);
       } else {
-        toast.success("Product Created Successfully");
+        toast.success("Product Updated");
         navigate("/dashboard/manage.vision/admin/products");
       }
     } catch (error) {

@@ -60,7 +60,7 @@ const ProductPage = () => {
                                             src={hosturl+image}
                                             alt=""
                                             className="cimg"
-                                            // style={{ width: "50%" ,border: "1px solid black"}}
+                                             //style={{ width: "30px" ,border: "1px solid black"}}
                                             onClick={() => setSelectedImage(image)} // Update selected image on click
                                         />
                                    
@@ -102,7 +102,6 @@ const ProductPage = () => {
             </div>
 
             <div className="spdiv">
-                <h1>hai</h1>
                 <Row xs={1} md={2} className="g-4 row row-cols-md-2 row-cols-1">
                     <Col className="colone">
                         <img src={hosturl+selectedImage} alt="" style={{ width: "80%" }}></img>
